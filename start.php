@@ -25,7 +25,7 @@ define('ALLOW_CLIENT_INPUT', true);
 // Uinix user for command. Recommend nobody www etc. 
 define('USER', 'www-data');
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/WorkerMan/Autoloader.php';
 
 $worker = new Worker("Websocket://0.0.0.0:7778");
 $worker->name = 'phptty';
